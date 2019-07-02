@@ -1,0 +1,36 @@
+<dashboard>
+  <label>Download new balanced savedsearches.conf file</label>
+  <description>Download the new savedsearches.conf file as a gz or a zip</description>
+   <row>
+    <panel>
+      <html>
+     <h3>View new balanced savedsearches.conf file in Browser</h3>
+     <ul>
+       <li>Click to open savedsearches.conf in browser><a href="/static/app/$env:app$/new_config_files/savedsearches.conf" target="_none"><b>[here]</b></a>
+          </li>
+     </ul>
+   </html>
+    </panel>
+  </row>
+     <row>
+    <panel>
+      <html>
+     <h3>Download new balanced savedsearches.conf zip file (Windows)</h3>
+     <ul>
+       <li>Click to download savedsearches.conf.zip file><a href="/static/app/$env:app$/new_config_files/savedsearches.conf.zip" target="_none"><b>>[here]</b></a>
+          </li>
+     </ul>
+   </html>
+    </panel>
+  </row>   <row>
+    <panel>
+      <html>
+     <h3>Download savedsearches.conf.gz file (Linux or MacOS)</h3>
+     <ul>
+       <li>Click to download savedsearches.conf.gz file><a href="/static/app/$env:app$/new_config_files/savedsearches.conf.gz" target="_none"><b>>[here]</b></a>
+          </li>
+     </ul>
+   </html>
+    </panel>
+  </row>
+</dashboard>

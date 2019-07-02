@@ -1,0 +1,51 @@
+<dashboard>
+  <label>| tunealerts list</label>
+   <row>
+    <panel>
+     <html>
+       <br></br>
+       <p><h3>The work flow for this app is to first issue "| tunealerts list" in the SEARCH BAR as had been done below</h3></p>
+       <br></br>
+     </html>
+    </panel>
+  </row>
+  <row>
+    <panel>
+      <table>
+        <search>
+          <query>| tunealerts list</query>
+          <earliest>-24h@h</earliest>
+          <latest>now</latest>
+          <sampleRatio>1</sampleRatio>
+        </search>
+        <option name="count">20</option>
+        <option name="dataOverlayMode">none</option>
+        <option name="drilldown">none</option>
+        <option name="percentagesRow">false</option>
+        <option name="rowNumbers">false</option>
+        <option name="totalsRow">false</option>
+        <option name="wrap">true</option>
+      </table>
+    </panel>
+   
+  </row>
+  
+   <row>
+    <panel>
+     <html>
+       <br></br>
+       <p>This dashpanel ran the search <b>| tunealerts list</b>  and any savedsearch.conf files it found are listed for you above</p>
+       <p>if any of your savedsearches.conf files are listed above, then select / highlight the whole path with your mouse and right click copy it</p>
+       <br></br>
+       <p>Go back to the search screen (click upper left on SEARCH</p>
+       and enter <h3>| tunefs ../../search/local/savedsearches.conf</h3>
+       <p>Which should produce a timing chart of your current alerts and saved searches schedule. Create a REPORT for this search and run the report and download the .csv file if you wish</p>
+       <p>With each tunefs command a new savedsearch.conf file is produced and use the DOWNLOAD dashboard to download a new balanced savedsearches.conf file to use in your splunk enterprise systems.</p>
+       <p>Note: The new savedsearches.conf file produced will run your alerts and saved searches ONCE AN HOUR only. This is the MOST efficient way to run your alerts and leave extra head room for ad-hoc users and provide more space for extra searches in the future. Running searches realtime is bad. Running searches every minute is also a bad idea. There are only so many search slots avaliable every minute and overloading splunk by running searches every minute will cause SKIPPED alerts which never fire off. If your Splunk System is skipping alertgs, then use this new savedsearches.conf file to stabilize your alerts and be sure to get each alert on time (every hour) if needed. Certain short search time alerts can be run every minute - but pleae - do this very cautiousl.
+       This edition of the app treats all alerts euqually and balances the alerting timing by running all the alerts hourly.</p>
+       <h3>Download the new savedsearches.conf file using the DOWNLOAD dashboard. Click "Dashboards" above left to get to the dashboards menu</h3>
+       <p>Make a backup of your esisting savedsearches.conf file. Place this new savedsearches.conf file where the original file was. RESTART Splunk and just like that - your searches are balanced and you will probably have NO skipped searches or alerts now.</p>
+     </html>
+    </panel>
+  </row>
+</dashboard>
